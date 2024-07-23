@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djsgys8oetchs"
-path="res://.godot/imported/platformerPack_industrial_tilesheet.png-8d79238c38e82d31f5391b9d66a65725.ctex"
+uid="uid://dri206pro5623"
+path="res://.godot/imported/shipBeige_damage1.png-05eef14f70bef53a21de9fcc81cdc13e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_platformer-pack-industrial/platformerPack_industrial_tilesheet.png"
-dest_files=["res://.godot/imported/platformerPack_industrial_tilesheet.png-8d79238c38e82d31f5391b9d66a65725.ctex"]
+source_file="res://addons/kenney_alien-ufo-pack/PNG/shipBeige_damage1.png"
+dest_files=["res://.godot/imported/shipBeige_damage1.png-05eef14f70bef53a21de9fcc81cdc13e.ctex"]
 
 [params]
 
