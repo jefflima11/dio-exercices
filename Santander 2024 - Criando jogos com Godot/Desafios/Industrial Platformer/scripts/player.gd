@@ -1,28 +1,18 @@
 extends CharacterBody2D
 
 
-const SPEED = 500
-const JUMP_VELOCITY = -450.0
+@export var speed = 3
+@export_range(0,1) var lerp_factor = 0.5
 
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
+@onready var sprite = %Sprite
 
 func _physics_process(delta):
-	# Add the gravity.
-	if not is_on_floor():
-		velocity.y += gravity * delta
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	var direction = Input.get_vector("ui_left", "ui_right","ui_up", "ui_down")
+	#velocity = direction * speed * 100.0
+	var target_velocity = direction * speed * 100
+	velocity = lerp(velocity, target_velocity, lerp_factor)
 	move_and_slide()
+
+	var target_rotation = direction.x * 45.00
+	sprite.rotation_degrees = lerp(sprite.rotation_degrees, target_rotation, lerp_factor)
