@@ -1,0 +1,86 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqj7pemjtb833"]
+
+[ext_resource type="Texture2D" uid="uid://c0n8875eeg5is" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png" id="1_vnb7v"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rgiq6"]
+line_spacing = 37.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorPurple" type="Sprite2D" parent="."]
+position = Vector2(1242, 824)
+texture = ExtResource("1_vnb7v")
+
+[node name="Label" type="Label" parent="WarriorPurple"]
+offset_left = 624.0
+offset_top = -691.0
+offset_right = 664.0
+offset_bottom = -668.0
+text = "Idie"
+
+[node name="Label2" type="Label" parent="WarriorPurple"]
+offset_left = 625.0
+offset_top = -500.0
+offset_right = 665.0
+offset_bottom = -477.0
+text = "run"
+
+[node name="Label3" type="Label" parent="WarriorPurple"]
+offset_left = 591.0
+offset_top = -303.0
+offset_right = 699.0
+offset_bottom = -280.0
+text = "attack_slide_1"
+
+[node name="Label4" type="Label" parent="WarriorPurple"]
+offset_left = 594.0
+offset_top = -77.0
+offset_right = 702.0
+offset_bottom = -54.0
+text = "attack_slide_2"
+
+[node name="Label5" type="Label" parent="WarriorPurple"]
+offset_left = 593.0
+offset_top = 73.0
+offset_right = 708.0
+offset_bottom = 96.0
+text = "attack_down_1"
+
+[node name="Label6" type="Label" parent="WarriorPurple"]
+offset_left = 592.0
+offset_top = 272.0
+offset_right = 707.0
+offset_bottom = 295.0
+text = "attack_down_2"
+
+[node name="Label8" type="Label" parent="WarriorPurple"]
+offset_left = 591.0
+offset_top = 656.0
+offset_right = 706.0
+offset_bottom = 679.0
+text = "attack_down_2"
+
+[node name="Label7" type="Label" parent="WarriorPurple"]
+offset_left = 591.0
+offset_top = 474.0
+offset_right = 706.0
+offset_bottom = 497.0
+text = "attack_down_2"
+
+[node name="Label9" type="Label" parent="WarriorPurple"]
+offset_left = -504.0
+offset_top = -797.0
+offset_right = -203.0
+offset_bottom = -774.0
+scale = Vector2(3.40946, 3.0891)
+text = "0            1           2           3            4            5 "
+
+[node name="Label9" type="Label" parent="WarriorPurple/Label9"]
+offset_left = -35.0
+offset_top = 19.0
+offset_right = -12.0
+offset_bottom = 266.0
+scale = Vector2(1.1326, 1.05046)
+text = "0            1           2           3            4            5            6            7"
+label_settings = SubResource("LabelSettings_rgiq6")
+autowrap_mode = 2
