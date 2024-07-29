@@ -88,3 +88,4 @@ label_settings = SubResource("LabelSettings_rgiq6")
 autowrap_mode = 2
 
 [node name="Player" parent="." instance=ExtResource("2_7k3vx")]
+position = Vector2(521, 316)
