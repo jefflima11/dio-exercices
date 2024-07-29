@@ -83,3 +83,4 @@ shape = SubResource("CapsuleShape2D_monsi")
 libraries = {
 "": SubResource("AnimationLibrary_2ns4e")
 }
+autoplay = "idle"
