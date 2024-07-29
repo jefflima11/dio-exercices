@@ -1,14 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqj7pemjtb833"]
+[gd_scene load_steps=4 format=3 uid="uid://dqj7pemjtb833"]
 
 [ext_resource type="Texture2D" uid="uid://c0n8875eeg5is" path="res://addons/Tiny Swords/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png" id="1_vnb7v"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rgiq6"]
 line_spacing = 37.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2tpko"]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="WarriorPurple" type="Sprite2D" parent="."]
-position = Vector2(1242, 824)
+position = Vector2(1599, 779)
 texture = ExtResource("1_vnb7v")
 
 [node name="Label" type="Label" parent="WarriorPurple"]
@@ -76,6 +78,7 @@ scale = Vector2(3.40946, 3.0891)
 text = "0            1           2           3            4            5 "
 
 [node name="Label9" type="Label" parent="WarriorPurple/Label9"]
+layout_mode = 0
 offset_left = -35.0
 offset_top = 19.0
 offset_right = -12.0
@@ -84,3 +87,14 @@ scale = Vector2(1.1326, 1.05046)
 text = "0            1           2           3            4            5            6            7"
 label_settings = SubResource("LabelSettings_rgiq6")
 autowrap_mode = 2
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_2tpko")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_vnb7v")
+hframes = 6
+vframes = 8
+frame = 41
